@@ -1,0 +1,2 @@
+SELECT dosen.kd_dosen, dosen.f_name, dosen.m_name, dosen.l_name, mk.title from dosen AS dosen INNER JOIN matkul AS mk ON mk.id = dosen.kd_matkul;
+SELECT dosen.kd_dosen AS `code Dosen`, CONCAT_WS(' ', dosen.f_name, dosen.m_name, dosen.l_name) AS `Nama Dosen`, mk.title AS `Mata Kuliah` from dosen AS dosen INNER JOIN matkul AS mk ON mk.id = dosen.kd_matkul;
