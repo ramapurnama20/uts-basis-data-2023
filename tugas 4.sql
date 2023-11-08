@@ -1,0 +1,2 @@
+SELECT mahasiswa.id,mahasiswa.f_nama,mahasiswa.m_nama,mahasiswa.l_nama, mk.title from mahasiswa AS mahasiswa INNER JOIN mata_kuliah AS mk ON mk.id = mahasiswa.kd_mata_kuliah;
+SELECT mahasiswa.id AS `id Mahasiswa`, CONCAT_WS(' ', mahasiswa.f_nama,mahasiswa.m_nama,mahasiswa.l_nama) AS `Nama Mahasiswa`, mk.title AS `mata_kuliah` from mahasiswa AS mahasiswa INNER JOIN mata_kuliah AS mk ON mk.id = mahasiswa.kd_mata_kuliah;
